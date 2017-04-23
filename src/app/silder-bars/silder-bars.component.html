@@ -7,5 +7,5 @@
     <td><span>{{bar.name}}</span></td>
     <!--[ngModel]='model.getProperty()' (ngModelChange)="model.setProperty($event)"-->
     <!--<td><input id="{{bar.name}}" (change)="silderChange($event)" value={{bar.value}} type="range" min='0' max="360" /></td>-->
-    <td><input id="{{bar.name}}" [ngModel]="range" (ngModelChange)="silderChange(bar.name,$event)" value={{bar.value}} type="range" min='0' max="360" /></td>
+    <td><input id="{{bar.name}}" [ngModel]="bar.value" (ngModelChange)="silderChange(bar.name,$event)" type="range" min="{{bar.min}}" max="{{bar.max}}" step="1" /></td>
 </tr>
