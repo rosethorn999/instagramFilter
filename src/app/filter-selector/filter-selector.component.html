@@ -1,0 +1,6 @@
+<div *ngFor="let box of filterBoxs" class="filterBox">
+    <img id="{{box.name}}" (click)="applyFilter($event)" src={{box.src}}>
+    <div class="overlay">
+        <div class="text">{{box.name}}</div>
+    </div>
+</div>

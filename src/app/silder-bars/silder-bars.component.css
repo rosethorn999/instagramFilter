@@ -1,0 +1,18 @@
+hr {
+    color: gray;
+}
+
+div {
+    display: block;
+    margin: 5px;
+    width: 300px;
+}
+
+span {
+    margin-left: 10px;
+    width: 100px;
+}
+
+input[type="range"] {
+    cursor: pointer;
+}
