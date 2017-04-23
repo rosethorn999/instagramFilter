@@ -15,18 +15,15 @@ export class SilderBarsComponent implements OnInit {
     { 'name': 'Grayscale', 'value': this.DataService.silderData['Grayscale'] },
     { 'name': 'Invert', 'value': this.DataService.silderData['Invert'] },
     { 'name': 'Hue Rotate', 'value': this.DataService.silderData['Hue Rotate'] },
-    { 'name': 'Blur',  'value': this.DataService.silderData['Blur'] }];
-    
+    { 'name': 'Blur', 'value': this.DataService.silderData['Blur'] }];
+
   constructor(private DataService: DataService) { }
 
   ngOnInit() {
   }
 
-  silderChange(e) {
-    let id = e.target.id
-    let val = e.target.value;
-
-    this.DataService.silderData[id] = +val;
+  silderChange(name,val) {
+    this.DataService.silderData[name] = +val;
     console.log(this.DataService.silderData); //抓到即時資料
   }
 }

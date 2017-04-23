@@ -5,5 +5,7 @@
 
 <tr *ngFor="let bar of bars">
     <td><span>{{bar.name}}</span></td>
-    <td><input id="{{bar.name}}" (change)="silderChange($event)" value={{bar.value}} type="range" min='0' max="360" /></td>
+    <!--[ngModel]='model.getProperty()' (ngModelChange)="model.setProperty($event)"-->
+    <!--<td><input id="{{bar.name}}" (change)="silderChange($event)" value={{bar.value}} type="range" min='0' max="360" /></td>-->
+    <td><input id="{{bar.name}}" [ngModel]="range" (ngModelChange)="silderChange(bar.name,$event)" value={{bar.value}} type="range" min='0' max="360" /></td>
 </tr>
