@@ -1,3 +1,8 @@
+<!--<tr *ngFor="let bar of bars">
+    <td><span>{{bar.name}}</span></td>
+    <td><input id="{{bar.name}}" (change)="silderChange($event)" value={{bar.value}} type="range" min='0' max="360" /></td>
+</tr>-->
+
 <tr *ngFor="let bar of bars">
     <td><span>{{bar.name}}</span></td>
     <td><input id="{{bar.name}}" (change)="silderChange($event)" value={{bar.value}} type="range" min='0' max="360" /></td>

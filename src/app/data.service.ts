@@ -16,8 +16,9 @@ export class DataService {
     'Hue Rotate': 0,
     'Blur': 0
   };
-
   public filterSelected: string = "f";
+
+
   // Observable string source
   private dataStringSource = new Subject<string>();
   // Observable string stream

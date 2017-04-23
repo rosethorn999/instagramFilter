@@ -1,0 +1,11 @@
+#silder_bar_container {
+    position:absolute;
+    right: 0;
+    width : 30%;
+}
+
+#main_container{
+    position:absolute;
+    left: 0;
+    width : 70%;
+}
