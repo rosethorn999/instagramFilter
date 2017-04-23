@@ -20,7 +20,4 @@ export class PhotoViewerComponent implements OnInit {
         this.filterSelected = data;
       });
   }
-
-
-
 }
