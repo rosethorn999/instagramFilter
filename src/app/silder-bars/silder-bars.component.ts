@@ -26,6 +26,6 @@ export class SilderBarsComponent implements OnInit {
   silderChange(name,val) {
     this.DataService.silderData[name] = +val;
     //console.log(this.DataService.silderData); //抓到即時資料
-    this.DataService.figureChange();
+    this.DataService.figureChange("");
   }
 }
