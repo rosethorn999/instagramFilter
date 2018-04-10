@@ -8,5 +8,5 @@ import { DataService } from './data.service';
   providers: [DataService]
 })
 export class AppComponent {
-  title = 'InstagramFilter works!';
+  title = 'Please click a [Template], or using the [silderbar] to adjust it!';
 }
